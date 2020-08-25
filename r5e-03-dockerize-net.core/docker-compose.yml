@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dummy-webapp:
+    image: ${DOCKER_REGISTRY-}dummywebapp
+    build:
+      context: .
+      dockerfile: dummy-webapp/Dockerfile
